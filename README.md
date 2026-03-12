@@ -104,7 +104,7 @@ Example file:
 mistral.gguf
 ```
 
-🐳 Build the Docker Image
+# 🐳 Build the Docker Image
 
 ```bash
 
@@ -121,12 +121,12 @@ docker run --rm -it \
 -e CHAT_FORMAT=mistral-instruct \
 local-llm-flask:latest
 ```
-🌐 Access the Web Interface
+# 🌐 Access the Web Interface
 Once the container is running, open:
 http://localhost:8000
 
 
-🖥️ Running Without Docker
+# 🖥️ Running Without Docker
 
 Install dependencies:
 pip install -r requirements.txt
@@ -135,7 +135,7 @@ python app.py
 Then open:
 http://localhost:8000
 
-🚀 Performance Tips
+# 🚀 Performance Tips
 
 Recommended models based on system RAM:
 RAM	Recommended Model
@@ -147,7 +147,7 @@ Q4_K_M  (balanced speed and quality)
 Q5_K_M  (better quality)
 Q8_0    (highest quality)
 
-🔒 Security Notes
+# 🔒 Security Notes
 
 This server is intended for local use.
 If exposing publicly:
@@ -155,7 +155,7 @@ Add authentication
 Use HTTPS
 Place behind a reverse proxy (Nginx / Traefik)
 
-🧩 Future Improvements
+# 🧩 Future Improvements
 Potential features:
 Authentication
 Conversation memory
@@ -163,7 +163,7 @@ Vector database integration
 Document search (RAG)
 Mobile optimized UI
 
-👤 Author
+# 👤 Author
 Created by Jak
 
 ⭐ If you find this project useful, consider giving it a star on GitHub.
