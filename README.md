@@ -20,6 +20,7 @@ Perfect for:
 ---
 
 # 📌 Architecture
+</>
 Browser UI
 │
 ▼
@@ -30,7 +31,7 @@ llama-cpp-python
 │
 ▼
 GGUF Model (Mistral / Llama)
-
+</>
 
 ---
 
