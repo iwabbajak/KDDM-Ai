@@ -20,18 +20,19 @@ Perfect for:
 ---
 
 # 📌 Architecture
-## Architecture
-Browser UI
-│
-▼
-Flask Web Server
-│
-▼
-llama-cpp-python
-│
-▼
-GGUF Model (Mistral / Llama)
 
+```
+Browser UI
+     │
+     ▼
+Flask Web Server
+     │
+     ▼
+llama-cpp-python
+     │
+     ▼
+GGUF Model (Mistral / Llama)
+```
 
 ---
 
@@ -48,6 +49,7 @@ GGUF Model (Mistral / Llama)
 ---
 
 # 📂 Repository Structure
+```
 local-llm-flask/
 │
 ├── app.py # Flask LLM server
@@ -61,7 +63,7 @@ local-llm-flask/
 │ └── logo.ico
 │
 └── README.md
-
+```
 
 ---
 
