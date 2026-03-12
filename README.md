@@ -102,9 +102,11 @@ Download a GGUF model from:
 https://huggingface.co/TheBloke
 Example file:
 mistral.gguf
-
+```
 
 🐳 Build the Docker Image
+
+```bash
 
 From the project root:
 docker build -t local-llm-flask .
@@ -118,7 +120,7 @@ docker run --rm -it \
 -e N_GPU_LAYERS=0 \
 -e CHAT_FORMAT=mistral-instruct \
 local-llm-flask:latest
-
+```
 🌐 Access the Web Interface
 Once the container is running, open:
 http://localhost:8000
