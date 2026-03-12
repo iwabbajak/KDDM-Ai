@@ -124,3 +124,46 @@ local-llm-flask:latest
 🌐 Access the Web Interface
 Once the container is running, open:
 http://localhost:8000
+
+
+🖥️ Running Without Docker
+
+Install dependencies:
+pip install -r requirements.txt
+Run the server:
+python app.py
+Then open:
+http://localhost:8000
+
+🚀 Performance Tips
+
+Recommended models based on system RAM:
+RAM	Recommended Model
+8GB	3B – 7B models
+16GB	7B – 13B models
+32GB+	13B+ models
+Common quantization formats:
+Q4_K_M  (balanced speed and quality)
+Q5_K_M  (better quality)
+Q8_0    (highest quality)
+
+🔒 Security Notes
+
+This server is intended for local use.
+If exposing publicly:
+Add authentication
+Use HTTPS
+Place behind a reverse proxy (Nginx / Traefik)
+
+🧩 Future Improvements
+Potential features:
+Authentication
+Conversation memory
+Vector database integration
+Document search (RAG)
+Mobile optimized UI
+
+👤 Author
+Created by Jak
+
+⭐ If you find this project useful, consider giving it a star on GitHub.
