@@ -1,0 +1,29 @@
+docker build -t llama-cpu .   #Build Docker
+docker run -it llama-cpu      # Run Docker file
+docker run -it llama-cpu python workspace\test_llama.py 
+
+
+New Flask Docker
+docker build -t local-llm-flask:latest .
+
+
+docker run --rm -it -p 8000:8000 \
+  -e MODEL_PATH=/workspace/models/mistral.gguf \
+  -e CTX=4096 -e THREADS=4 -e N_GPU_LAYERS=0 \
+  -e CHAT_FORMAT=mistral-instruct \
+  local-llm-flask:latest
+
+  
+docker run --rm -it -p 8000:8000 `
+  -e MODEL_PATH=/workspace/models/mistral.gguf `
+  -e CTX=4096 `
+  -e THREADS=4 `
+  -e N_GPU_LAYERS=0 `
+  -e CHAT_FORMAT=mistral-instruct `
+  local-llm-flask:latest
+
+docker run --rm -it -p 8000:8000 -e MODEL_PATH=/workspace/models/mistral.gguf -e CTX=4096 -e THREADS=4 -e N_GPU_LAYERS=0 -e CHAT_FORMAT=mistral-instruct local-llm-flask:latest python workspace\app.py
+docker run --rm -it -p 8000:8000 -e MODEL_PATH=/workspace/models/mistral.gguf -e CTX=4096 -e THREADS=4 -e N_GPU_LAYERS=0 -e CHAT_FORMAT=mistral-instruct local-llm-flask:latest python app.py    
+ docker run --rm -it -p 8000:8000 -e MODEL_PATH=/workspace/models/mistral.gguf -e CTX=4096 -e THREADS=4 -e N_GPU_LAYERS=0 -e CHAT_FORMAT=mistral-instruct local-llm-flask:latest      
+
+ docker run --rm -it -p 8000:8000 -e MODEL_PATH=/workspace/models/mistral.gguf -e CTX=4096 -e THREADS=4 -e N_GPU_LAYERS=0 -e CHAT_FORMAT=mistral-instruct local-llm-flask:latest
